@@ -1,8 +1,8 @@
 :root {
-  --black: #03120e;
+  --black: #0f1111;
   --gray: #1a1d1a;
-  --bluegray: #7a918d;
-  --blue: #93b1a7;
+  --bluegray: #7a8e91;
+  --blue: #93adb1;
   --orange: #983628;
 }
 
@@ -57,7 +57,7 @@ nav {
 #nav-right li a:hover {
   background-color: var(--gray);
   text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: var(--orange);
 }
 
 header {
@@ -87,12 +87,13 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: 0px;
 }
 
 .card {
   width: 200px;
   height: 300px;
+  margin: 30px;
   perspective: 1000px; /* Define the depth of the 3D effect */
 }
 
