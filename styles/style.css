@@ -105,7 +105,7 @@ header {
 }
 
 .card:hover .card-inner {
-  transform: rotateY(180deg); /* Flip the card on hover */
+  transform: rotateX(-180deg); /* Flip the card on hover */
 }
 
 .card-front,
