@@ -77,3 +77,7 @@ header {
   padding: 0;
   color: var(--bluegray);
 }
+
+#header-slash {
+  color: var(--orange);
+}
