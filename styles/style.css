@@ -2,8 +2,12 @@
   --black: #0f1111;
   --gray: #1a1d1a;
   --bluegray: #7a8e91;
-  --blue: #93adb1;
-  --orange: #983628;
+  --blue: #7fd2d6;
+  --blue2: #50b6c1;
+  --darkblue: #214152;
+  --darkestblue: #192936;
+  --white: #c4d3dc;
+  --orange: #f48a32;
 }
 
 * {
