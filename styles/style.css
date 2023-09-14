@@ -1,5 +1,5 @@
 :root {
-  --black: #0f1111;
+  --black: #000;
   --gray: #1a1d1a;
   --bluegray: #7a8e91;
   --blue: #7fd2d6;
@@ -44,24 +44,29 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  transition: all 0.3s;
 }
 
 #nav-right li {
   float: left;
   margin: 20px;
+  transition: all 0.3s;
 }
 
 #nav-right li a {
-  color: var(--blue);
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 #nav-right li a:hover {
-  background-color: var(--gray);
+  background-color: #151515;
+  color: var(--blue);
   text-decoration: underline;
   text-decoration-color: var(--orange);
+  transition: all 0.3s;
 }
 
 header {
@@ -72,14 +77,14 @@ header {
   font-size: 3rem;
   margin: 0;
   padding: 0;
-  color: var(--blue);
+  color: var(--darkblue);
 }
 
 .header-sub {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  color: var(--bluegray);
+  color: var(--white);
 }
 
 #header-slash {
@@ -126,7 +131,7 @@ header {
 }
 
 .card-front {
-  background-color: var(--gray);
+  background-color: var(--darkestblue);
 }
 
 .card-back {
