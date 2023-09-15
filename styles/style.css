@@ -10,6 +10,13 @@
   --orange: #f48a32;
 }
 
+::selection {
+  background: #bababa; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #bababa; /* Gecko Browsers */
+}
+
 * {
   margin: 0;
   padding: 0;
