@@ -81,10 +81,23 @@ header {
 }
 
 #header-title {
+  font-family: "Orbitron", Courier, monospace;
   font-size: 3rem;
   margin: 0;
   padding: 0;
   color: var(--darkblue);
+}
+
+.title-white {
+  color: var(--white);
+}
+
+.title-blue {
+  color: var(--blue);
+}
+
+.title-orange {
+  color: var(--orange);
 }
 
 .header-sub {
@@ -104,6 +117,10 @@ header {
   align-items: center;
   height: 100vh;
   margin: 0px;
+}
+
+.project-title {
+  font-family: "Orbitron", Courier, monospace;
 }
 
 .card {
