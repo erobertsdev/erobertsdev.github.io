@@ -62,7 +62,7 @@ nav {
 }
 
 #nav-right li a:hover {
-  background-color: #151515;
+  background-color: #232323;
   color: var(--blue);
   text-decoration: underline;
   text-decoration-color: var(--orange);
