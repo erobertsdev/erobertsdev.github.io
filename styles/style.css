@@ -11,10 +11,10 @@
 }
 
 ::selection {
-  background: #bababa; /* WebKit/Blink Browsers */
+  background: var(--blue2); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #bababa; /* Gecko Browsers */
+  background: var(--blue2); /* Gecko Browsers */
 }
 
 * {
@@ -94,6 +94,10 @@ header {
 
 .title-orange {
   color: var(--orange);
+}
+
+.bluegray {
+  color: var(--bluegray);
 }
 
 .header-sub {
