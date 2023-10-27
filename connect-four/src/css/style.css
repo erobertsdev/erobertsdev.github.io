@@ -1,0 +1,134 @@
+* {
+	text-align: center;
+}
+
+body {
+	font-family: 'Odibee Sans', cursive, sans-serif;
+	color: #fff;
+	background-image: url('../img/bg6.jpg');
+	background-repeat: repeat;
+	background-size: 400px 400px;
+
+	animation: fadeIn 1s linear;
+}
+
+.game-status {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 0 auto;
+	width: 400px;
+	transition: all .3s;
+}
+
+.board {
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 30px 30px;
+	width: 700px;
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+h1 {
+	font-size: 8em;
+	color: #fff;
+	background: -webkit-linear-gradient(15deg, #465c69 30%, rgb(156, 145, 126) 50%, #e27e5f 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 2em;
+	letter-spacing: 1rem;
+	color: #fff;
+	text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .5px .5px 0 #000;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+table {
+	margin: 0 auto;
+}
+
+td {
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	height: 100px;
+	width: 100px;
+}
+
+.red {
+	background-color: #e27e5f;
+
+	animation: fadeIn .8s linear;
+}
+
+.blue {
+	background-color: #465c69;
+
+	animation: fadeIn .8s linear;
+}
+
+.col-hover {
+	border-left: 4px solid orange;
+	border-right: 4px solid orange;
+}
+
+.game-btn {
+	font-size: 2em;
+	color: white;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 20px auto;
+	background-color: rgba(128, 128, 128, 0.5);
+	cursor: pointer;
+
+	transition: all .5s;
+}
+.game-btn:hover {
+	color: black;
+	filter: brightness(80%);
+}
+
+i {
+	color: rgb(128, 128, 128);
+	font-size: 3em;
+	margin-top: 20px;
+	text-shadow: 1px 1px 3px rgb(122, 122, 122);
+	transition: all .3s;
+}
+i:hover {
+	filter: brightness(120%);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media all and (max-width: 750px) {
+	h1 {
+		font-size: 6em;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	td {
+		height: 55px;
+		width: 55px;
+	}
+	.board {
+		width: 340px;
+		border-top-left-radius: 0%;
+		border-top-right-radius: 0%;
+	}
+}

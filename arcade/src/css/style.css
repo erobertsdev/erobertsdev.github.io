@@ -1,0 +1,304 @@
+:root {
+	--inner: black;
+	--border: white;
+	--accent: greenyellow;
+	--hover: orange;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+a {
+	color: white;
+	font-size: 9rem;
+	text-decoration: none;
+}
+a:hover {
+	color: greenyellow;
+}
+
+body {
+	font-size: 10rem;
+	font-family: 'VT323', monospace;
+	background: rgb(0, 0, 0);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(rgba(0, 0, 0, 1)),
+		color-stop(50%, rgba(119, 119, 119, 1)),
+		to(rgba(0, 0, 0, 1))
+	);
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(119, 119, 119, 1) 50%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(119, 119, 119, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.title {
+	text-align: center;
+	margin: 20px 20px;
+}
+
+.main-title {
+	font-size: 17rem;
+	-webkit-text-fill-color: greenyellow;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+
+	-webkit-animation: flash 3s linear infinite;
+
+	animation: flash 3s linear infinite;
+}
+
+.title-e {
+	font-size: 17rem;
+	-webkit-text-fill-color: rgb(0, 174, 255);
+}
+
+.title-r {
+	font-size: 17rem;
+	-webkit-text-fill-color: rgb(255, 0, 0);
+}
+
+.sub-title {
+	color: greenyellow;
+}
+
+.games {
+	text-align: center;
+	padding-top: 50px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 400px 40px 400px;
+	grid-template-columns: 400px 400px;
+	grid-auto-rows: minmax(400px, auto);
+	grid-gap: 40px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.game-1 {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	-webkit-backdrop-filter: grayscale(.5);
+	backdrop-filter: grayscale(.5);
+	background-image: url(../img/connect-four.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.game-2 {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	background-image: url(../img/simone.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.game-3 {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	background-image: url(../img/hangman.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Props to 'Mike!' on codepen for figuring out this pixelated border trick
+https://codepen.io/fallwestmike/pen/ezOGJK
+*/
+.pxl-border {
+	background-color: var(--inner);
+	-webkit-box-shadow: 0 -6px 0 -2px var(--inner), 0 6px 0 -2px var(--inner), 0 -12px 0 -4px var(--inner),
+		0 12px 0 -4px var(--inner), 0 -18px 0 -8px var(--inner), 0 18px 0 -8px var(--inner),
+		0 -24px 0 -12px var(--inner), 0 24px 0 -12px var(--inner), -2px 0 0 0 var(--border), 2px 0 0 0 var(--border),
+		0 -4px 0 0 var(--border), 0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border), 0 10px 0 -2px var(--border),
+		0 -14px 0 -4px var(--border), 0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+		0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border), 0 26px 0 -12px var(--border),
+		-4px 0 0 0 var(--accent), 4px 0 0 0 var(--accent), 0 -2px 0 2px var(--accent), 0 2px 0 2px var(--accent),
+		0 -8px 0 0px var(--accent), 0 8px 0 0px var(--accent), 0 -12px 0 -2px var(--accent), 0 12px 0 -2px var(--accent),
+		0 -16px 0 -4px var(--accent), 0 16px 0 -4px var(--accent), 0 -22px 0 -8px var(--accent),
+		0 22px 0 -8px var(--accent), 0 -28px 0 -12px var(--accent), 0 28px 0 -12px var(--accent),
+		-6px 0 0 0 var(--border), 6px 0 0 0 var(--border), 0 0 0 4px var(--border), 0 -6px 0 2px var(--border),
+		0 6px 0 2px var(--border), 0 -10px 0 0 var(--border), 0 10px 0 0 var(--border), 0 -14px 0 -2px var(--border),
+		0 14px 0 -2px var(--border), 0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border),
+		0 -24px 0 -8px var(--border), 0 24px 0 -8px var(--border), 0 -30px 0 -12px var(--border),
+		0 30px 0 -12px var(--border);
+	box-shadow: 0 -6px 0 -2px var(--inner), 0 6px 0 -2px var(--inner), 0 -12px 0 -4px var(--inner),
+		0 12px 0 -4px var(--inner), 0 -18px 0 -8px var(--inner), 0 18px 0 -8px var(--inner),
+		0 -24px 0 -12px var(--inner), 0 24px 0 -12px var(--inner), -2px 0 0 0 var(--border), 2px 0 0 0 var(--border),
+		0 -4px 0 0 var(--border), 0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border), 0 10px 0 -2px var(--border),
+		0 -14px 0 -4px var(--border), 0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+		0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border), 0 26px 0 -12px var(--border),
+		-4px 0 0 0 var(--accent), 4px 0 0 0 var(--accent), 0 -2px 0 2px var(--accent), 0 2px 0 2px var(--accent),
+		0 -8px 0 0px var(--accent), 0 8px 0 0px var(--accent), 0 -12px 0 -2px var(--accent), 0 12px 0 -2px var(--accent),
+		0 -16px 0 -4px var(--accent), 0 16px 0 -4px var(--accent), 0 -22px 0 -8px var(--accent),
+		0 22px 0 -8px var(--accent), 0 -28px 0 -12px var(--accent), 0 28px 0 -12px var(--accent),
+		-6px 0 0 0 var(--border), 6px 0 0 0 var(--border), 0 0 0 4px var(--border), 0 -6px 0 2px var(--border),
+		0 6px 0 2px var(--border), 0 -10px 0 0 var(--border), 0 10px 0 0 var(--border), 0 -14px 0 -2px var(--border),
+		0 14px 0 -2px var(--border), 0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border),
+		0 -24px 0 -8px var(--border), 0 24px 0 -8px var(--border), 0 -30px 0 -12px var(--border),
+		0 30px 0 -12px var(--border);
+}
+.pxl-border:hover {
+	background-color: var(--inner);
+	-webkit-box-shadow: 0 -6px 0 -2px var(--inner), 0 6px 0 -2px var(--inner), 0 -12px 0 -4px var(--inner),
+		0 12px 0 -4px var(--inner), 0 -18px 0 -8px var(--inner), 0 18px 0 -8px var(--inner),
+		0 -24px 0 -12px var(--inner), 0 24px 0 -12px var(--inner), -2px 0 0 0 var(--border), 2px 0 0 0 var(--border),
+		0 -4px 0 0 var(--border), 0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border), 0 10px 0 -2px var(--border),
+		0 -14px 0 -4px var(--border), 0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+		0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border), 0 26px 0 -12px var(--border),
+		-4px 0 0 0 var(--hover), 4px 0 0 0 var(--hover), 0 -2px 0 2px var(--hover), 0 2px 0 2px var(--hover),
+		0 -8px 0 0px var(--hover), 0 8px 0 0px var(--hover), 0 -12px 0 -2px var(--hover), 0 12px 0 -2px var(--hover),
+		0 -16px 0 -4px var(--hover), 0 16px 0 -4px var(--hover), 0 -22px 0 -8px var(--hover), 0 22px 0 -8px var(--hover),
+		0 -28px 0 -12px var(--hover), 0 28px 0 -12px var(--hover), -6px 0 0 0 var(--border), 6px 0 0 0 var(--border),
+		0 0 0 4px var(--border), 0 -6px 0 2px var(--border), 0 6px 0 2px var(--border), 0 -10px 0 0 var(--border),
+		0 10px 0 0 var(--border), 0 -14px 0 -2px var(--border), 0 14px 0 -2px var(--border),
+		0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border), 0 -24px 0 -8px var(--border),
+		0 24px 0 -8px var(--border), 0 -30px 0 -12px var(--border), 0 30px 0 -12px var(--border);
+	box-shadow: 0 -6px 0 -2px var(--inner), 0 6px 0 -2px var(--inner), 0 -12px 0 -4px var(--inner),
+		0 12px 0 -4px var(--inner), 0 -18px 0 -8px var(--inner), 0 18px 0 -8px var(--inner),
+		0 -24px 0 -12px var(--inner), 0 24px 0 -12px var(--inner), -2px 0 0 0 var(--border), 2px 0 0 0 var(--border),
+		0 -4px 0 0 var(--border), 0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border), 0 10px 0 -2px var(--border),
+		0 -14px 0 -4px var(--border), 0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+		0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border), 0 26px 0 -12px var(--border),
+		-4px 0 0 0 var(--hover), 4px 0 0 0 var(--hover), 0 -2px 0 2px var(--hover), 0 2px 0 2px var(--hover),
+		0 -8px 0 0px var(--hover), 0 8px 0 0px var(--hover), 0 -12px 0 -2px var(--hover), 0 12px 0 -2px var(--hover),
+		0 -16px 0 -4px var(--hover), 0 16px 0 -4px var(--hover), 0 -22px 0 -8px var(--hover), 0 22px 0 -8px var(--hover),
+		0 -28px 0 -12px var(--hover), 0 28px 0 -12px var(--hover), -6px 0 0 0 var(--border), 6px 0 0 0 var(--border),
+		0 0 0 4px var(--border), 0 -6px 0 2px var(--border), 0 6px 0 2px var(--border), 0 -10px 0 0 var(--border),
+		0 10px 0 0 var(--border), 0 -14px 0 -2px var(--border), 0 14px 0 -2px var(--border),
+		0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border), 0 -24px 0 -8px var(--border),
+		0 24px 0 -8px var(--border), 0 -30px 0 -12px var(--border), 0 30px 0 -12px var(--border);
+
+	-webkit-animation: hoverFlash 1s infinite;
+
+	animation: hoverFlash 1s infinite;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	25% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	35% {
+		-webkit-filter: brightness(75%);
+		filter: brightness(75%);
+	}
+	45% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	50% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	100% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+}
+
+@keyframes flash {
+	0% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	25% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	35% {
+		-webkit-filter: brightness(75%);
+		filter: brightness(75%);
+	}
+	45% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	50% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	100% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+}
+
+@-webkit-keyframes hoverFlash {
+	0% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	20% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	30% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	40% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	100% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+}
+
+@keyframes hoverFlash {
+	0% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	20% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	30% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	40% {
+		-webkit-filter: brightness(150%);
+		filter: brightness(150%);
+	}
+	100% {
+		-webkit-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+}
+
+@media all and (max-width: 900px) {
+	.games {
+		-ms-grid-columns: 400px;
+		grid-template-columns: 400px;
+		grid-gap: 20px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.main-title,
+	.title-e,
+	.title-r {
+		font-size: 10rem;
+	}
+	.sub-title {
+		font-size: 3rem;
+	}
+}
