@@ -84,6 +84,11 @@ header {
   color: var(--darkblue);
 }
 
+.title {
+  font-family: "Orbitron", Courier, monospace;
+  margin: 10px;
+}
+
 .title-white {
   color: var(--white);
 }
@@ -119,10 +124,15 @@ header {
   margin: 0px;
 }
 
-.project-title,
-#contact-title {
-  font-family: "Orbitron", Courier, monospace;
-  margin: 10px;
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+#about-title {
+  font-size: 2.5rem;
 }
 
 .project-img-wrapper {
