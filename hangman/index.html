@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ea1a8cf193.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea1a8cf193.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Hangman!</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="title-main">Hangman!</h1>
 
     <section id="main">
-        <div class="game-status">
-            <h3 id="game-remaining-guesses"></h3>
-            <h4 id="status-message">Press Play to Begin!</h4>
-        </div>
-        <div class="game-graphic no-height">
-            <div id="head"></div>
-            <div id="torso"></div>
-            <div id="left-arm"></div>
-            <div id="right-arm"></div>
-            <div id="left-leg"></div>
-            <div id="right-leg"></div>
-        </div>
-        <div class="game-word"></div>
+      <div class="game-status">
+        <h3 id="game-remaining-guesses"></h3>
+        <h4 id="status-message">Press Play to Begin!</h4>
+      </div>
+      <div class="game-graphic no-height">
+        <div id="head"></div>
+        <div id="torso"></div>
+        <div id="left-arm"></div>
+        <div id="right-arm"></div>
+        <div id="left-leg"></div>
+        <div id="right-leg"></div>
+      </div>
+      <div class="game-word"></div>
     </section>
 
     <section class="guessing-area">
-        <form id="guess-form" autocomplete="off">
-            <input type="text" name="guess" id="guess-text" class="hide" />
-            <button id="guess-button">PLAY</button>
-        </form>
-        <div class="game-guessed-letters"><span id="guessed-letters-list" class="hide"></span></div>
+      <form id="guess-form" autocomplete="off">
+        <input
+          type="text"
+          name="guess"
+          id="guess-text"
+          maxlength="1"
+          class="hide"
+        />
+        <button id="guess-button">PLAY</button>
+      </form>
+      <div class="game-guessed-letters">
+        <span id="guessed-letters-list" class="hide"></span>
+      </div>
     </section>
 
-    <footer><a href="https://github.com/erobertsdev/hangman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a></footer>
-    
+    <footer>
+      <a
+        href="https://github.com/erobertsdev/hangman"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><i class="fab fa-github-square"></i
+      ></a>
+    </footer>
+
     <script type="module" src="./assets/js/app.js"></script>
-</body>
+  </body>
 </html>
