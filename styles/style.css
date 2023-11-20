@@ -91,6 +91,17 @@ header {
   color: var(--white);
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.section-main-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  /* text-shadow: 1px 1px 1px #000000; */
+}
+
 .title-blue {
   color: var(--darkblue);
 }
@@ -101,6 +112,10 @@ header {
 
 .bluegray {
   color: var(--bluegray);
+}
+
+.medium {
+  font-size: 1.3rem;
 }
 
 .header-sub {
@@ -120,6 +135,19 @@ header {
   align-items: center;
   height: 100vh;
   margin: 0px;
+}
+
+.project-card {
+  width: 80vw;
+  height: 400px;
+  background: rgb(244, 138, 50, 0.7);
+  background: linear-gradient(
+    162deg,
+    rgba(244, 138, 50, 0.7) 0%,
+    rgba(33, 65, 82, 0.7) 71%
+  );
+  border-radius: 5px;
+  padding: 20px;
 }
 
 /* ABOUT SECTION */
@@ -210,10 +238,11 @@ header {
 
 /* Contact Form */
 #contact {
+  font-family: "Orbitron", Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 50px;
 }
 
 #contact-form {
@@ -226,17 +255,35 @@ header {
 }
 
 #contact-form label {
+  color: #3d7694;
   font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+#contact-form-title {
+  font-size: 2rem;
 }
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
+  font-family: "Orbitron", Courier, monospace;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  background-color: #1b1b1b;
+  color: var(--white);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  background-color: #232323;
 }
 
 #contact-form textarea {
@@ -245,14 +292,19 @@ header {
 }
 
 #contact-form button[type="submit"] {
-  background-color: #007bff;
+  font-family: "Orbitron", Courier, monospace;
+  font-weight: bold;
+  background-color: var(--darkblue);
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
+
+  transition: all 0.3s;
 }
 
 #contact-form button[type="submit"]:hover {
-  background-color: #0056b3;
+  filter: brightness(120%);
+  color: var(--orange);
 }
