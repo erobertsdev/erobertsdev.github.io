@@ -87,7 +87,8 @@ header {
   margin: 10px;
 }
 
-.title-white {
+.title-white,
+.white {
   color: var(--white);
 }
 
@@ -101,6 +102,10 @@ header {
 
 .bluegray {
   color: var(--bluegray);
+}
+
+.medium {
+  font-size: 1.3rem;
 }
 
 .header-sub {
@@ -120,6 +125,19 @@ header {
   align-items: center;
   height: 100vh;
   margin: 0px;
+}
+
+.project-card {
+  width: 80vw;
+  height: 400px;
+  background: rgb(244, 138, 50);
+  background: linear-gradient(
+    162deg,
+    rgba(244, 138, 50, 1) 0%,
+    rgba(33, 65, 82, 1) 71%
+  );
+  border-radius: 5px;
+  padding: 20px;
 }
 
 /* ABOUT SECTION */
