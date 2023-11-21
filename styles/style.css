@@ -87,7 +87,8 @@ header {
   margin: 10px;
 }
 
-.title-white {
+.title-white,
+.white {
   color: var(--white);
 }
 
@@ -112,6 +113,10 @@ header {
 
 .bluegray {
   color: var(--bluegray);
+}
+
+.medium {
+  font-size: 1.3rem;
 }
 
 .medium {
