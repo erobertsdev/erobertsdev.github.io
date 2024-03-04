@@ -205,6 +205,26 @@ header {
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
+
+  /* grid system for 3 columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.about-card-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.about-card-middle {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.about-card-right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 /* Contact Form */
