@@ -201,12 +201,12 @@ header {
     rgba(244, 138, 50, 0.7) 0%,
     rgba(33, 65, 82, 0.7) 71%
   );
+  color: var(--white);
   border-radius: 5px;
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 
-  /* grid system for 3 columns */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
