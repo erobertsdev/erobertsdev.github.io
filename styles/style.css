@@ -195,12 +195,12 @@ header {
 .about-card {
   width: 80vw;
   height: 400px;
-  background: rgb(244, 138, 50, 0.7);
-  background: linear-gradient(
+  background: rgba(71, 69, 66, 0.3);
+  /* background: linear-gradient(
     162deg,
     rgba(244, 138, 50, 0.7) 0%,
     rgba(33, 65, 82, 0.7) 71%
-  );
+  ); */
   color: var(--white);
   border-radius: 5px;
   padding: 20px;
