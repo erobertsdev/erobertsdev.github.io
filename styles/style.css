@@ -29,6 +29,11 @@ body {
   color: var(--blue);
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -179,6 +184,12 @@ header {
 .project-title {
   font-family: "Orbitron", Courier, monospace;
   font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px var(--darkestblue);
+}
+
+.project-description {
+  font-size: 1.2rem;
   color: #fff;
   text-shadow: 1px 1px 1px var(--darkestblue);
 }
