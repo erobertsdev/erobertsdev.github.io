@@ -89,7 +89,6 @@ header {
 
 .title {
   font-family: "Orbitron", Courier, monospace;
-  margin: 10px;
 }
 
 .title-white,
@@ -142,12 +141,11 @@ header {
 /* PROJECTS SECTION */
 
 #projects {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 10rem;
 }
 
 #projects-title {
@@ -156,7 +154,7 @@ header {
 }
 
 .project-card {
-  width: 80vw;
+  width: fit-content;
   height: 400px;
   background: rgb(244, 138, 50, 0.7);
   background: linear-gradient(
