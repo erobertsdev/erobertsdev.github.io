@@ -170,7 +170,6 @@ header {
 }
 
 .project-card:hover {
-  cursor: pointer;
   background: rgb(244, 138, 50, 0.9);
   background: linear-gradient(
     162deg,
@@ -207,6 +206,13 @@ header {
   transition: all 0.3s;
 }
 
+.project-tech-detail {
+  border: 1px solid var(--white);
+  padding: 0px 5px 0px 5px;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px var(--darkestblue);
+}
 /* ABOUT SECTION */
 
 #about {
