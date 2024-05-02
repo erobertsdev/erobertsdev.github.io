@@ -1,5 +1,5 @@
 const screenshotModal = document.getElementById("screenshot-dialog");
-const closeModal = document.getElementById("close-dialog"),
+const closeModal = document.getElementById("close-dialog-btn"),
   fullsizeScreenshot = document.getElementById("screenshot-fullsize-img");
 
 document.querySelectorAll(".project-screen-thumb").forEach((thumb) => {
