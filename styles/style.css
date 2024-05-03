@@ -159,6 +159,7 @@ header {
 
 .project-card {
   width: fit-content;
+  border-radius: 3px;
   height: 400px;
   background: rgb(244, 138, 50, 0.7);
   background: linear-gradient(
@@ -198,6 +199,7 @@ header {
   height: 150px;
   width: 150px;
   border: 1px solid var(--white);
+  border-radius: 5px;
 }
 
 .project-screen-thumb:hover {
@@ -210,10 +212,40 @@ header {
 
 .project-tech-detail {
   border: 1px solid var(--white);
+  border-radius: 3px;
   padding: 0px 5px 0px 5px;
   font-size: 1rem;
   color: #fff;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 1px var(--white); */
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  text-align: center;
+  outline: 1px solid var(--white);
+  margin: 5px;
+  padding: 8px;
+  justify-self: center;
+}
+
+.project-link-text {
+  font-size: 1rem;
+  color: #fff;
   text-shadow: 1px 1px 1px var(--darkestblue);
+}
+
+.project-github-icon {
+  width: 35px;
+}
+
+.project-github-icon:hover {
+  filter: brightness(120%);
 }
 
 /* Modal */
