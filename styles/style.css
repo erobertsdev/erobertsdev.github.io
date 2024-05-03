@@ -10,6 +10,7 @@
   --orange: #f48a32;
   caret-color: var(--blue2);
   accent-color: var(--blue2);
+  scroll-behavior: smooth;
 }
 
 ::selection {
