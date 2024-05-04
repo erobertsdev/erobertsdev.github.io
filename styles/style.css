@@ -275,11 +275,19 @@ header {
 
 #screenshot-dialog {
   max-width: 80vw;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 #screenshot-fullsize {
   text-align: center;
+}
+
+.screenshot-fullsize-img {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 5px;
+  margin: 20px;
 }
 
 /* ABOUT SECTION */
