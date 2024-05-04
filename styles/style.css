@@ -191,13 +191,13 @@ header {
   font-family: "Orbitron", Courier, monospace;
   font-size: 1.5rem;
   color: #fff;
-  text-shadow: 1px 1px 1px var(--darkestblue);
+  text-shadow: 1px 1px 1px var(--darkblue);
 }
 
 .project-description {
   font-size: 1.2rem;
-  color: #fff;
-  text-shadow: 1px 1px 1px var(--darkestblue);
+  color: var(--white);
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 
 .project-screenshots {
