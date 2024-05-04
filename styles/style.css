@@ -64,6 +64,7 @@ nav {
 
 #nav-right li a {
   color: var(--white);
+  border-radius: 5px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -71,8 +72,8 @@ nav {
 }
 
 #nav-right li a:hover {
-  background-color: #232323;
-  color: #3d7694; /* darkblue but lighter, matches the title blue better but no var for it */
+  background-color: #303030;
+  color: #3d7694;
   text-decoration: underline;
   text-decoration-color: var(--orange);
   transition: all 0.3s;
@@ -227,13 +228,29 @@ header {
 }
 
 .project-tech-detail {
-  border: 1px solid var(--white);
+  border: 1px solid #477c98;
   border-radius: 3px;
   padding: 0px 5px 0px 5px;
   font-size: 1rem;
   color: #fff;
   font-weight: bold;
-  /* text-shadow: 1px 1px 1px var(--white); */
+}
+
+.project-key-features {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-features-title {
+  font-size: 1.5rem;
+  color: var(--orange);
+  text-shadow: 1px 1px 1px var(--darkestblue);
+}
+
+.project-features-list {
+  color: var(--white);
+  list-style-type: none;
+  padding: 0;
 }
 
 .project-links {
@@ -311,11 +328,6 @@ header {
   width: 80vw;
   height: 400px;
   background: rgba(71, 69, 66, 0.3);
-  /* background: linear-gradient(
-    162deg,
-    rgba(244, 138, 50, 0.7) 0%,
-    rgba(33, 65, 82, 0.7) 71%
-  ); */
   color: var(--white);
   border-radius: 5px;
   padding: 20px;
@@ -355,7 +367,6 @@ header {
 #contact-form {
   width: 400px;
   padding: 20px;
-  /* background-color: #f0f0f0; */
   border-radius: 5px;
   border: 1px solid var(--white);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
