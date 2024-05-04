@@ -172,6 +172,7 @@ header {
   );
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--white);
   margin-bottom: 20px;
 }
 
