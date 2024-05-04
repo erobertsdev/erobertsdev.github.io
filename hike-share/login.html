@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea1a8cf193.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>Hike Share | Login</title>
+</head>
+<body>
+
+    <section>
+        <nav id="nav">
+            <a href="./index.html"><h1 class="nav-title">Hike<i class="fas fa-tree"></i>Share</h1></a>
+            <div class="nav-menu-list">
+                <ul class="nav-menu-options nav-menu-home">
+                    <li class="nav-menu-option">
+                    <a href="./index.html">
+                        Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <h1 id="login-title">Login</h1>
+    <section id="login">
+        <div id="errors"></div>
+        <form id="login-form">
+            <div class="input-field">
+                <label for="login-email">Email</label><br>
+                <input type="email" id="login-email" required />
+            </div>
+            <div class="input-field">
+                <label for="login-password">Password</label><br>
+                <input type="password" id="login-password" required />
+            </div>
+            <button id="login-btn">Login</button>
+        </form>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>

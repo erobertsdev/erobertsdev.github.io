@@ -1,0 +1,62 @@
+* {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.create-form-images {
+	margin: 20px auto;
+	max-width: 600px;
+	background-color: white;
+}
+
+.filepond--drop-label {
+	background-color: white;
+}
+
+.create-btn {
+	background-color: darkolivegreen;
+	color: white;
+	border: 1px solid black;
+	font-weight: 700;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+}
+
+.create-btn:hover {
+	cursor: pointer;
+	filter: brightness(120%);
+}
+
+.create-btn:disabled {
+	cursor: not-allowed;
+	background-color: darkgray;
+}
+
+.create-form-blurb {
+	margin: 10px auto;
+	max-width: 90vw;
+}
+
+#create-post-title {
+	margin-top: 55px;
+	font-size: 2rem;
+	color: darkolivegreen;
+}
+
+#upload-status {
+	background-color: darkolivegreen;
+	color: white;
+}
+
+input:focus {
+	outline: none;
+	border-bottom: 3px solid darkolivegreen;
+}
+
+@media all and (max-width: 700px) {
+	.nav-menu-home {
+		transform: translateY(30px);
+	}
+}

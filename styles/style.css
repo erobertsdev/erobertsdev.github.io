@@ -93,6 +93,7 @@ header {
 
 .title {
   font-family: "Orbitron", Courier, monospace;
+  margin-bottom: 50px;
 }
 
 .title-white,
@@ -259,7 +260,8 @@ header {
   text-shadow: 1px 1px 1px var(--darkestblue);
 }
 
-.project-github-icon {
+.project-github-icon,
+.project-live-icon {
   width: 35px;
   transform: translateY(10px);
 }

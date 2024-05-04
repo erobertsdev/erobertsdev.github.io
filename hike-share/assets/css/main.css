@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+	font-family: 'Cairo', Arial, Helvetica, sans-serif;
+	font-smooth: 2em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+body {
+	text-align: center;
+	background-color: rgb(238, 238, 238);
+}
+
+#nav {
+	border-bottom: 1px solid black;
+	height: 100px;
+}
+
+.fa-tree {
+	font-size: 3rem;
+}
+
+div.flickity-viewport {
+	background-color: rgb(238, 238, 238);
+}
+
+.nav-title {
+	width: fit-content;
+	color: darkolivegreen;
+	padding: 10px;
+	margin-left: 30px;
+	font-size: 3rem;
+	transform: translateY(-10px);
+}
+
+.nav-avatar {
+	border: 1px solid black;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+	transform: translateY(15px);
+}
+
+.nav-menu-list {
+	float: right;
+	transform: translateY(-60px);
+}
+
+.nav-menu-list.logged-out {
+	transform: translateY(-40px);
+}
+
+.nav-menu-options {
+	list-style: none;
+	transform: translateY(-35px);
+	padding-right: 20px;
+}
+
+.nav-menu-options > li {
+	padding: 10px;
+	display: inline;
+}
+
+.nav-menu-option {
+	color: black;
+	transition: all .3s;
+}
+
+.nav-menu-option:hover {
+	background-color: lightgray;
+	filter: brightness(120%);
+}
+
+.nav-menu-home {
+	margin-top: 15px;
+}
+
+.nav-menu-account {
+	transition: all .3s;
+}
+
+.nav-menu-account:hover {
+	filter: brightness(120%);
+}
+
+#main {
+	width: 100vw;
+	column-gap: 20px;
+	row-gap: 50px;
+	margin: 0 auto;
+	justify-items: center;
+}
+
+.hike-card-name {
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+
+.hike-card-state {
+	text-transform: capitalize;
+}
+
+.hike-card-country {
+	transform: translateY(-5px);
+}
+
+.hike-card-difficulty {
+	text-transform: capitalize;
+}
+
+.fa-trash-alt {
+	color: darkred;
+
+	transition: all .3s;
+}
+
+.fa-trash-alt:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#more {
+	text-align: center;
+}
+
+#more-btn {
+	border-radius: 5px;
+	background-color: darkolivegreen;
+	color: white;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 5px;
+}
+
+#more-btn:hover {
+	cursor: pointer;
+	filter: brightness(120%);
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer-link {
+	color: darkolivegreen;
+}
+
+#footer-link:hover {
+	filter: brightness(120%);
+}
+
+.hidden {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@media all and (max-width: 700px) {
+	#nav {
+		text-align: center;
+		display: block;
+		height: 150px;
+	}
+	.nav-title {
+		margin: 0 auto;
+	}
+	.nav-menu {
+		transform: translateY(60px);
+	}
+	.nav-menu-list {
+		float: none;
+	}
+}
