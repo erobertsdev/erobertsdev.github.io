@@ -110,7 +110,6 @@ header {
   font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
-  /* text-shadow: 1px 1px 1px #000000; */
 }
 
 .title-blue {
@@ -197,7 +196,6 @@ header {
 .project-description {
   font-size: 1.2rem;
   color: var(--white);
-  /* text-shadow: 1px 1px 1px #fff; */
 }
 
 .project-screenshots {
@@ -449,4 +447,27 @@ header {
 #contact-form button[type="submit"]:hover {
   filter: brightness(120%);
   color: var(--orange);
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  color: var(--white);
+}
+
+#footer-email {
+  color: var(--blue2);
+}
+
+#footer-email:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+  color: #3d7694;
+
+  transition: all 0.3s;
 }
