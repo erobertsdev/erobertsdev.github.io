@@ -477,7 +477,12 @@ footer {
 
 @media (max-width: 768px) {
   #projects {
+    grid-template-columns: 1fr;
     padding: 20px;
+  }
+
+  .project-card {
+    max-width: 90vw;
   }
 
   #projects-title {
@@ -489,7 +494,6 @@ footer {
   }
 
   .project-screen-thumb {
-    /* max-height: 100px; */
     max-width: 75%;
   }
 
@@ -542,6 +546,7 @@ footer {
   }
 
   #projects {
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 
