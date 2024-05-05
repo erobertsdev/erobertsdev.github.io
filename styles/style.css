@@ -293,9 +293,12 @@ header {
 /* Modal */
 
 #screenshot-dialog {
-  max-width: 80vw;
+  width: 100svw;
+  height: 100svh;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(33, 65, 82, 0.7);
+  border: none;
+  padding: 20px;
 }
 
 #screenshot-fullsize {
@@ -307,6 +310,26 @@ header {
   max-height: 80vh;
   border-radius: 5px;
   margin: 20px;
+}
+
+#close-dialog-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--orange);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid var(--white);
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#close-dialog-btn:hover {
+  background-color: var(--darkblue);
+  color: var(--orange);
+  transition: all 0.3s;
 }
 
 /* ABOUT SECTION */

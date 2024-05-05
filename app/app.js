@@ -8,7 +8,6 @@ document.querySelectorAll(".project-screen-thumb").forEach((thumb) => {
     screenshotModal.showModal();
     console.log(fullsizeScreenshot.src);
     console.log(thumb.src);
-    // fullsizeScreenshot.src = thumb.src.replace("thumb", "fullsize");
   });
 });
 
