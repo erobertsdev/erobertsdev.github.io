@@ -526,6 +526,10 @@ footer {
     width: 90vw;
   }
 
+  #close-dialog-btn {
+    position: initial;
+  }
+
   #contact {
     margin: 20px;
   }
