@@ -128,10 +128,6 @@ header {
   font-size: 1.3rem;
 }
 
-.medium {
-  font-size: 1.3rem;
-}
-
 .header-sub {
   font-size: 2.3rem;
   margin: 0;
@@ -164,7 +160,11 @@ header {
 .project-card {
   width: fit-content;
   border-radius: 3px;
-  height: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgb(244, 138, 50, 0.7);
   background: linear-gradient(
     162deg,
@@ -482,9 +482,9 @@ footer {
     padding: 20px;
   }
 
-  .project-card {
+  /* .project-card {
     max-width: 90vw;
-  }
+  } */
 
   #projects-title {
     font-size: 2rem;
