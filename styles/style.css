@@ -4,10 +4,16 @@
   --bluegray: #7a8e91;
   --blue: #7fd2d6;
   --blue2: #50b6c1;
+  --blue3: #277ed8;
   --darkblue: #214152;
   --darkestblue: #192936;
   --white: #c4d3dc;
   --orange: #f48a32;
+  --cerulian: #3d7694;
+  --cerulian2: #247ba0;
+  --thistle: #c77dff;
+  --thistle2: #b7adcf;
+  --green: #adcfc8;
   caret-color: var(--blue2);
   accent-color: var(--blue2);
   scroll-behavior: smooth;
