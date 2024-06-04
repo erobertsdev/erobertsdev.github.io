@@ -3,7 +3,7 @@
   --gray: #1a1d1a;
   --bluegray: #7a8e91;
   --blue: #7fd2d6;
-  --blue2: #50b6c1;
+  --blue2: #5098c1;
   --blue3: #277ed8;
   --darkblue: #214152;
   --darkestblue: #192936;
@@ -80,7 +80,7 @@ nav {
 
 #nav-right li a:hover {
   background-color: #303030;
-  color: #3d7694;
+  color: var(--cerulian);
   text-decoration: underline;
   text-decoration-color: var(--orange);
   transition: all 0.3s;
@@ -120,7 +120,7 @@ header {
 }
 
 .title-blue {
-  color: var(--darkblue);
+  color: var(--cerulian);
 }
 
 .title-orange {
@@ -172,14 +172,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: rgb(244, 138, 50, 0.7);
-  background: linear-gradient(
-    162deg,
-    rgba(244, 138, 50, 0.7) 0%,
-    rgba(33, 65, 82, 0.7) 71%
-  ); */
-  background: #50b6c1cf;
-  background: linear-gradient(162deg, #50b6c1cf 0%, rgba(33, 65, 82, 0.7) 71%);
+  background: #5098c1cf;
+  background: linear-gradient(162deg, #5098c1cf 0%, #214152d5 71%);
   /* #50b6c1 */
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -188,16 +182,15 @@ header {
 }
 
 .project-card:hover {
-  background: #e79653e5;
-  background: linear-gradient(162deg, #e79653e5 0%, rgba(33, 65, 82, 0.9) 71%);
+  background: #3d7594d4;
   transition: all 0.3s;
 }
 
 .project-title {
   font-family: "Orbitron", Courier, monospace;
   font-size: 1.5rem;
-  color: #fff;
-  text-shadow: 1px 1px 1px var(--darkblue);
+  color: var(--orange);
+  text-shadow: 1px 1px 1px var(--black);
 }
 
 .project-description {
@@ -234,7 +227,7 @@ header {
 }
 
 .project-tech-detail {
-  border: 1px solid #477c98;
+  border: 1px solid rgba(80, 152, 193, 1);
   border-radius: 3px;
   padding: 0px 5px 0px 5px;
   font-size: 1rem;
@@ -402,7 +395,7 @@ header {
 }
 
 #contact-form label {
-  color: #3d7694;
+  color: #5098c1;
   font-weight: bold;
   font-size: 1.5rem;
   padding-bottom: 10px;
@@ -441,7 +434,7 @@ header {
 #contact-form button[type="submit"] {
   font-family: "Orbitron", Courier, monospace;
   font-weight: bold;
-  background-color: var(--darkblue);
+  background-color: var(--cerulian);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -452,7 +445,7 @@ header {
 }
 
 #contact-form button[type="submit"]:hover {
-  filter: brightness(120%);
+  background-color: var(--darkblue);
   color: var(--orange);
 }
 
@@ -475,7 +468,6 @@ footer {
 #footer-email:hover {
   text-decoration: underline;
   text-decoration-color: var(--orange);
-  color: #3d7694;
 
   transition: all 0.3s;
 }
