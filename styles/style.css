@@ -8,7 +8,7 @@
   --darkblue: #214152;
   --darkestblue: #192936;
   --white: #c4d3dc;
-  --orange: #f48a32;
+  --orange: #e79653;
   --cerulian: #3d7694;
   --cerulian2: #247ba0;
   --thistle: #c77dff;
@@ -35,7 +35,7 @@
 body {
   font-family: "Cairo", sans-serif;
   /* background-color: #1b1b1b; */
-  background-color: #586871;
+  background-color: #202020;
   color: var(--blue);
 }
 
@@ -124,7 +124,7 @@ header {
 }
 
 .title-orange {
-  color: var(--blue2);
+  color: var(--orange);
 }
 
 .bluegray {
@@ -188,12 +188,8 @@ header {
 }
 
 .project-card:hover {
-  background: rgb(244, 138, 50, 0.9);
-  background: linear-gradient(
-    162deg,
-    rgba(244, 138, 50, 0.9) 0%,
-    rgba(33, 65, 82, 0.9) 71%
-  );
+  background: #e79653e5;
+  background: linear-gradient(162deg, #e79653e5 0%, rgba(33, 65, 82, 0.9) 71%);
   transition: all 0.3s;
 }
 
