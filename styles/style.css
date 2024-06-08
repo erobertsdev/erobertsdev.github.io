@@ -16,6 +16,10 @@
   --green: #adcfc8;
   caret-color: var(--blue2);
   accent-color: var(--blue2);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
 
@@ -34,7 +38,6 @@
 
 body {
   font-family: "Cairo", sans-serif;
-  /* background-color: #1b1b1b; */
   background-color: #202020;
   color: var(--blue);
 }
@@ -156,6 +159,7 @@ header {
   justify-items: center;
   align-items: center;
   padding: 50px;
+  text-align: center;
 }
 
 #projects-title {
@@ -173,7 +177,7 @@ header {
   justify-content: center;
   align-items: center;
   background: #5098c1cf;
-  background: linear-gradient(162deg, #5098c1cf 0%, #214152d5 71%);
+  background: linear-gradient(162deg, #3d7393cf 0%, #162c37d5 71%);
   /* #50b6c1 */
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -182,7 +186,9 @@ header {
 }
 
 .project-card:hover {
-  background: #3d7594d4;
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+
   transition: all 0.3s;
 }
 
