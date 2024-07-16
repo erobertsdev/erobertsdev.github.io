@@ -150,38 +150,6 @@ header {
   color: var(--bluegray);
 }
 
-/* About Section */
-
-#about {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 70%;
-  margin: 0 auto;
-  margin-top: 10rem;
-}
-
-#about-title {
-  font-size: 2.5rem;
-  align-self: flex-start;
-}
-
-#about-text {
-  font-size: 1.3rem;
-  color: var(--white);
-  padding: 1rem;
-  border-radius: 3px;
-  background: rgb(61, 118, 148);
-  background: linear-gradient(
-    162deg,
-    rgba(61, 118, 148, 0.5) 0%,
-    rgba(32, 32, 32, 1) 50%,
-    rgba(231, 150, 83, 0.5) 100%
-  );
-}
-
 /* PROJECTS SECTION */
 
 #projects {
@@ -384,18 +352,37 @@ header {
 
 /* ABOUT SECTION */
 
+/* About Section */
+
 #about {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 70%;
   margin: 0 auto;
   margin-top: 10rem;
+  margin-bottom: 15rem;
 }
 
 #about-title {
   font-size: 2.5rem;
   align-self: flex-start;
+}
+
+#about-text {
+  font-size: 1.3rem;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 3px;
+  background: rgb(61, 118, 148);
+  background: linear-gradient(
+    162deg,
+    rgba(61, 118, 148, 0.5) 0%,
+    rgba(32, 32, 32, 1) 50%,
+    rgba(231, 150, 83, 0.5) 100%
+  );
 }
 
 .about-card {
